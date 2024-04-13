@@ -20,7 +20,7 @@ namespace Newtonsoft.Json.UnityConverters.Editor
             Selection.activeObject = config;
         }
 
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        [InitializeOnLoadMethod()]
         public static void CreateConfig()
         {
             GetOrCreateConfig();
