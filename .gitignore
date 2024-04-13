@@ -108,8 +108,10 @@ __pycache__/
 node_modules/
 /package-lock.json
 
+Build/*/**.meta
 Build/**.meta
-Docs/**.meta
+Doc/**.meta
+Doc/*/**.meta
 Packages/**.meta
 ProjectSettings/**.meta
 
