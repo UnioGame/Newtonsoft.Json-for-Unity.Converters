@@ -107,3 +107,20 @@ __pycache__/
 # NPM packages used in local dev environment
 node_modules/
 /package-lock.json
+
+Build/**.meta
+Docs/**.meta
+Packages/**.meta
+ProjectSettings/**.meta
+
+Assets.meta
+Build.meta
+Doc.meta
+Docs.meta
+Packages.meta
+ProjectSettings.meta
+README.md.meta
+CHANGELOG.md.meta
+LICENSE.md.meta
+THIRD-PARTY-NOTICES.md.meta
+CODE_OF_CONDUCT.md.meta
