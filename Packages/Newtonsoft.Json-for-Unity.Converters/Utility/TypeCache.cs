@@ -7,10 +7,8 @@ namespace Newtonsoft.Json.UnityConverters.Utility
 {
     internal static class TypeCache
     {
-        private static readonly Dictionary<ValueTuple<string, string>, Type> _typeByNameAndAssembly
-            = new Dictionary<ValueTuple<string, string>, Type>();
-        private static readonly Dictionary<string, Assembly> _assemblyByName
-            = new Dictionary<string, Assembly>();
+        private static readonly Dictionary<ValueTuple<string, string>, Type> _typeByNameAndAssembly = new();
+        private static readonly Dictionary<string, Assembly> _assemblyByName = new();
 
         private static readonly Assembly[] _assemblies;
 
