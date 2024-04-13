@@ -20,14 +20,17 @@ namespace Newtonsoft.Json.UnityConverters.Editor
             Selection.activeObject = config;
         }
 
-        private static UnityConvertersConfig GetOrCreateConfig()
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        public static void CreateConfig()
+        {
+            GetOrCreateConfig();
+        }
+        
+        public static UnityConvertersConfig GetOrCreateConfig()
         {
             var config = Resources.Load<UnityConvertersConfig>(UnityConvertersConfig.PATH_FOR_RESOURCES_LOAD);
 
-            if (config)
-            {
-                return config;
-            }
+            if (config) return config;
 
             config = ScriptableObject.CreateInstance<UnityConvertersConfig>();
 
